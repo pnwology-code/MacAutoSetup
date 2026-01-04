@@ -42,5 +42,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 echo "Setting up dotfiles with GNU Stow..."
 stow --target="$HOME" --dir=./dotfiles zsh vim nvim aerospace
 
+# Install PNPM packages
+echo "Installing PNPM packages..."
+pnpm add -g opencode-ai
+pnpm add -g @mixedbread/mgrep   
+pnpm add -g @fission-ai/openspec@latest
+
 # Optionally restart the shell
 exec zsh -l
