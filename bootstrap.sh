@@ -39,12 +39,7 @@ fi
 
 # Install PNPM packages
 echo "Installing PNPM packages..."
-
-export PNPM_HOME="$HOME/.local/share/pnpm"
-
-if [[ ":$PATH:" != *":$PNPM_HOME:"* ]]; 
-then  export PATH="$PNPM_HOME:$PATH"
-fi
+pnpm setup
 
 pnpm add -g @mixedbread/mgrep --allow-build=@mixedbread/mgrep
 pnpm add -g @fission-ai/openspec@latest --allow-build=@fission-ai/openspec
