@@ -19,6 +19,7 @@ brew "stow"
 brew "neovim"
 brew "kubectl"       # Kubernetes CLI
 brew "tailscale"     # Secure mesh VPN for homelab and remote access
+brew "todo-txt"
 
 # Languages n stuff
 brew "python"
@@ -35,13 +36,12 @@ brew "gawk"
 # GUI Applications
 cask "iterm2"
 cask "visual-studio-code"
-cask "raycast"
+# cask "raycast"
 cask "docker"
 cask "ghostty"
 cask "aerospace"
-cask "caffeine"
-cask "discord"
-cask "chatgpt"
+# cask "discord"
+# cask "chatgpt"
 cask "shottr"
 cask "caffeine" 
 # cash "zoom" - I don't want to install this by default
