@@ -55,6 +55,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Use GNU Stow to symlink dotfiles
 echo "Setting up dotfiles with GNU Stow..."
+mv ~/.zshrc ~/.zshrc.backup
 stow --target="$HOME" --dir=./dotfiles zsh vim nvim aerospace
 
 # Optionally restart the shell
