@@ -37,14 +37,14 @@ if [[ ! -d "${XDG_DATA_HOME:-$HOME/.local/share}/zap" ]]; then
   rm -f ~/.zshrc
 fi
 
-# Re-source Homebrew env just in case
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # Install PNPM packages
 echo "Installing PNPM packages..."
 pnpm add -g opencode-ai
 pnpm add -g @mixedbread/mgrep   
 pnpm add -g @fission-ai/openspec@latest
+
+# Re-source Homebrew env just in case
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Use GNU Stow to symlink dotfiles
 echo "Setting up dotfiles with GNU Stow..."
