@@ -1,5 +1,7 @@
 # 🛠️ MacAutoSetup
 
+*** updated and personalized for pnwology 1/3/26 ***
+
 A lean, modern development environment for macOS that brings the Linux tiling window manager experience to Mac — with minimal fuss.
 
 ## ✨ Core Features
