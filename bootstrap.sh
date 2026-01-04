@@ -40,10 +40,11 @@ fi
 # Install PNPM packages
 echo "Installing PNPM packages..."
 
-set -x PNPM_HOME $HOME/.local/share/pnpm
-if not string match -q "*$PNPM_HOME*" $PATH
-    set -x PATH $PNPM_HOME $PATH
-end
+export PNPM_HOME="$HOME/.local/share/pnpm"
+
+if [[ ":$PATH:" != *":$PNPM_HOME:"* ]]; 
+then  export PATH="$PNPM_HOME:$PATH"
+fi
 
 pnpm add -g opencode-ai --allow-build=opencode-ai
 pnpm add -g @mixedbread/mgrep --allow-build=@mixedbread/mgrep
