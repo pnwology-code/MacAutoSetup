@@ -1,5 +1,6 @@
 tap "nikitabobko/tap" # Aerospace
 tap "jorgerojas26/lazysql" 
+tap buo/cask-upgrade
 
 # CLI Tools
 brew "git"
@@ -30,6 +31,7 @@ brew "node"
 brew "nvm"
 
 # GNU Utilities
+brew "mas"
 brew "coreutils"
 brew "gnu-sed"
 brew "findutils"
@@ -47,6 +49,8 @@ cask "aerospace"
 cask "shottr"
 cask "caffeine" 
 cask "microsoft-office"
+cask "accordance"
+cask "logos"
 # cash "zoom" - I don't want to install this by default
 
 # Fonts
