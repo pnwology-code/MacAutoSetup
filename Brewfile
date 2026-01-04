@@ -4,6 +4,7 @@ tap "buo/cask-upgrade"
 
 # CLI Tools
 brew "git"
+brew "pnpm"
 brew "fzf"
 brew "ripgrep"
 brew "bat"
