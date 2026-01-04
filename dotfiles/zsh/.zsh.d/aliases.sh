@@ -1,4 +1,3 @@
-alias db="cd ~/DB && nvim ~/DB/index.md"
 
 # Prefer GNU tools over BSD ones
 
@@ -14,4 +13,4 @@ alias td='todo.sh done'
 alias ta='todo.sh add'
 alias tl='todo.sh list'
 alias tp='todo.sh pri'
-alias te='nvim ~/DB/todo.txt' # let's me just take a look at the todo file
+alias te='nvim $HOME/.todo/todo.txt' # let's me just take a look at the todo file
