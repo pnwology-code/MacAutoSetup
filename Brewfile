@@ -1,6 +1,6 @@
 tap "nikitabobko/tap" # Aerospace
 tap "jorgerojas26/lazysql" 
-tap buo/cask-upgrade
+tap "buo/cask-upgrade"
 
 # CLI Tools
 brew "git"
