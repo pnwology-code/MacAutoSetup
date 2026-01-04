@@ -48,7 +48,7 @@ fi
 
 pnpm add -g opencode-ai --allow-build=opencode-ai
 pnpm add -g @mixedbread/mgrep --allow-build=@mixedbread/mgrep
-pnpm add -g @fission-ai/openspec@latest --allow-build=@fission-ai/openspec@latest
+pnpm add -g @fission-ai/openspec@latest --allow-build=@fission-ai/openspec
 
 # Re-source Homebrew env just in case
 eval "$(/opt/homebrew/bin/brew shellenv)"
