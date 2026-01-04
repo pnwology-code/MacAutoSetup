@@ -51,6 +51,7 @@ cask "caffeine"
 cask "microsoft-office"
 cask "accordance"
 cask "logos"
+cask "google-chrome"
 # cash "zoom" - I don't want to install this by default
 
 # Fonts
