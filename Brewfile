@@ -46,6 +46,7 @@ cask "aerospace"
 # cask "chatgpt"
 cask "shottr"
 cask "caffeine" 
+cask "microsoft-office"
 # cash "zoom" - I don't want to install this by default
 
 # Fonts
