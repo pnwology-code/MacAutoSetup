@@ -24,6 +24,7 @@ brew "tailscale"     # Secure mesh VPN for homelab and remote access
 brew "todo-txt"
 brew "bartib"
 brew "git-flow"
+brew "opencode"
 
 # Languages n stuff
 brew "python"
