@@ -46,7 +46,6 @@ if [[ ":$PATH:" != *":$PNPM_HOME:"* ]];
 then  export PATH="$PNPM_HOME:$PATH"
 fi
 
-pnpm add -g opencode-ai --allow-build=opencode-ai
 pnpm add -g @mixedbread/mgrep --allow-build=@mixedbread/mgrep
 pnpm add -g @fission-ai/openspec@latest --allow-build=@fission-ai/openspec
 
