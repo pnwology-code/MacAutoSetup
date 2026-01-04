@@ -39,6 +39,12 @@ fi
 
 # Install PNPM packages
 echo "Installing PNPM packages..."
+
+set -x PNPM_HOME $HOME/.local/share/pnpm
+if not string match -q "*$PNPM_HOME*" $PATH
+    set -x PATH $PNPM_HOME $PATH
+end
+
 pnpm add -g opencode-ai --allow-build=opencode-ai
 pnpm add -g @mixedbread/mgrep --allow-build=@mixedbread/mgrep
 pnpm add -g @fission-ai/openspec@latest --allow-build=@fission-ai/openspec@latest
