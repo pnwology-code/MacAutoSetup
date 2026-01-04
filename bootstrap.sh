@@ -23,6 +23,8 @@ fi
 if [[ -f ./Brewfile ]]; then
   echo "Installing applications from Brewfile..."
   brew bundle --file=./Brewfile
+  echo "Updating brew installs...and updating Apple store items..."
+  brew update-if-needed && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup --prune=all
 else
   echo "Warning: Brewfile not found in current directory"
 fi
